@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Literals - expresiones</title>
+  </head>
+  <body>
+    <script>
+      const nombre = "nek";
+      console.log(`Mi nombre es ${nombre}`);
+      console.log(`Mi nombre es ${29}`);
+      console.log(`Este es el ${"curso de java pa react"}`);
+      console.log(`Este es el ${(x = "nek")}`);
+      console.log(
+        `Este es el ${(function name() {
+          return "nek";
+        })()}`
+      );
+      console.log(
+        `Este es el ${(function () {
+          return "nekk";
+        })()}`
+      );
+      console.log(
+        `mi nombre es ${(() => {
+          return "nekk the best";
+        })()}`
+      );
+      console.log(`mi nombre es ${true && "nek aja"}`);
+      console.log(`mi nombre es ${false ? "nekk si" : "nek no"}`);
+      console.log(
+        `mi nombre es ${["a", "b"].map((letra) => `${letra}-styled`)}`
+      );
+    </script>
+  </body>
+</html>
